@@ -40,7 +40,6 @@ function addTransaction(e) {
 
   transactions.push(newTransaction);
 
-  // Correct method name is localStorage.setItem (singular)
   localStorage.setItem("transactions", JSON.stringify(transactions));
 
   updateTransactionList();
@@ -125,15 +124,14 @@ function updateValues() {
   // --- LOGIC CHANGE HERE ---
   if (total < 0) {
     balanceLabel.textContent = "Your Debt";
-    // Optional: You could also add a class for styling a negative balance here
     balance.classList.add('negative-balance'); 
   } else {
     balanceLabel.textContent = "Your Balance";
     balance.classList.remove('negative-balance');
   }
-  // -------------------------
 
-  // Calculate Income
+
+  // Calculatinnng the Income
   const income = amounts
     .filter((item) => item > 0)
     .reduce((acc, item) => (acc += item), 0)
