@@ -1,4 +1,5 @@
 self.addEventListener("install", (e) => {
+  self.skipWaiting();
   e.waitUntil(
     caches.open("static").then((cache) => {
       return cache.addAll([
