@@ -1,0 +1,22 @@
+{
+  "name": "My Expense Tracker",
+  "short_name": "My Expense Tracker",
+  "version": "1.0.0",
+  "start_url": ".",
+  "background-color": "#84ab60",
+  "theme_color": "#009578",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "assets/logo192.png",
+      "size": "192x154",
+      "type": "image/png"
+    },
+
+    {
+      "src": "assets/logo 512.png",
+      "size": "512x411",
+      "type": "image/png"
+    }
+  ]
+}
